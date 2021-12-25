@@ -7,7 +7,7 @@
 }
 
 .container__card{
-    background: var(--very--light-gray);
+    background: var(--very-light-gray);
     color: var(--very-light-gray);
     font-size: 15px;
     font-family: 'Lexend Deca', 'sans-serif';
