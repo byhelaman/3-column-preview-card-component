@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/byhelaman/social-proof-section
-- Live Site URL: 
+- Solution URL: https://github.com/byhelaman/3-column-preview-card-component
+- Live Site URL: https://loving-yonath-b49e66.netlify.app/
 
 ## My process
 
