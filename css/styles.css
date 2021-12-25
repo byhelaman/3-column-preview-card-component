@@ -1,0 +1,124 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+.container__card{
+    background: var(--very--light-gray);
+    color: var(--very-light-gray);
+    font-size: 15px;
+    font-family: 'Lexend Deca', 'sans-serif';
+    padding: 88px 24px;
+    display: grid;
+    place-items: center;
+}
+
+.card__orange,
+.card__cyan,
+.card__darkcyan{
+    padding: 48px;
+    height: 440px;
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.card__orange{
+    background: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card__cyan{
+    background: var(--dark-cyan);
+}
+
+.card__darkcyan{
+    background: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.container__card h2{
+    font-family: 'Big Shoulders Display', 'sans-serif';
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.container__card p{
+    color: var(--transparent-white);
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.card__button{
+    background: var(--very-light-gray);
+    border: none;
+    border-radius: 60px;
+    width: 146px;
+    height: 48px;
+    margin: 12px 0 0 0;
+}
+
+.card__orange .card__button{
+    color: var(--bright-orange);
+}
+
+.card__cyan .card__button{
+    color: var(--dark-cyan);
+}
+
+.card__darkcyan .card__button{
+    color: var(--very-dark-cyan);
+}
+
+.card__button:hover{
+    background: none;
+    color: var(--light-gray);
+    border: 2px solid;
+}
+
+@media (min-width: 960px){
+    .container__card{
+        display: grid;
+        grid-template: 1fr/1fr 1fr 1fr;
+        padding: 170px 130px 130px;
+    }
+
+    .card__orange,
+    .card__cyan,
+    .card__darkcyan{
+        height: 500px;
+        width: 100%;
+    }
+
+    .card__button{
+        margin: 22px 0 0 0;
+    }
+
+    .card__orange{
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .card__darkcyan{
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+@media (min-width: 1440px){
+    .container__card{
+        display: grid;
+        grid-template: 1fr/1fr 1fr 1fr;
+        padding: 170px 260px 130px;
+    }
+
+    .card__orange,
+    .card__cyan,
+    .card__darkcyan{
+        height: 500px;
+    }
+
+    .card__button{
+        margin: 72px 0 0 0;
+    }
+}
