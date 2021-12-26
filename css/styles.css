@@ -13,7 +13,8 @@
     font-family: 'Lexend Deca', 'sans-serif';
     padding: 88px 24px;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
+    justify-content: center;
 }
 
 .card__orange,
@@ -21,7 +22,7 @@
 .card__darkcyan{
     padding: 48px;
     height: 440px;
-    width: 330px;
+    width: 327px;
     box-sizing: border-box;
 }
 
